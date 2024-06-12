@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+
+<body class="font-roboto">
+    <!-- saydullo -->
+    <header class="max-w-7xl mx-auto">
+        <nav class="flex justify-between items-center py-5 px-4">
+            <div class="flex items-center gap-8">
+                <img src="./images/header-icon.svg" alt="header-icon">
+                <label for="default-search"
+                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="hidden sm:block relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="search" id="default-search"
+                        class="block w-96 p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search Thinkswap" required />
+                </div>
+            </div>
+            <div class="flex items-center gap-6">
+                <div class="hidden lg:block">
+                    <div class="flex gap-1 items-center text-brend-gray-200 text-medium text-lg">
+                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.0002 0.86499V2.86499H17.0002L11.0002 11.865V18.865H7.00018V11.865L1.00018 2.86499H0.000183105V0.86499H18.0002Z"
+                                fill="#5B5F79" fill-opacity="0.36" />
+                        </svg>
+                        Browse subjects
+                    </div>
+                </div>
+                <div class="hidden lg:block border-x border-brend-gray-300 px-6">
+                    <img src="./images/korzinka-icon.png" alt="korzinka-icon" class="cursor-pointer">
+                </div>
+                <button
+                    class="hidden md:block bg-brend-blue-100 text-white hover:opacity-50 transition-all duration-300 font-medium text-sm rounded-md py-2 px-5">
+                    Register
+                </button>
+                <a href="#" class="hidden md:block text-brend-blue-100 font-medium">
+                    Sign in
+                </a>
+            </div>
+            <div class="sm:hidden flex items-center gap-5">
+                <img src="./images/search-icon.svg" alt="search" class="cursor-pointer">
+                <img src="./images/menu.svg" alt="menu" class="cursor-pointer">
+            </div>
+        </nav>
+    </header>
+    <div class="max-w-7xl mx-auto pt-16 pb-14 px-4">
+        <div class="grid grid-cols-2 items-center">
+            <div class="">
+                <div
+                    class="inline-block bg-brend-blue-200 text-brend-blue-100 font-semibold text-sm uppercase rounded-full tracking-widest py-3 px-4">
+                    Get instant study help
+                </div>
+                <h1 class="text-brend-black-100 text-6xl font-bold mt-4">
+                    Welcome to the best <span class="text-brend-blue-100">study library</span> in Australia
+                </h1>
+                <p class="text-brend-gray-400 text-xl mt-4">
+                    Join an active community of thousands of students who use Thinkswap daily to study and improve their
+                    grades.
+                </p>
+                <div class="mt-4">
+                    <button
+                        class="bg-brend-blue-100 text-white hover:opacity-50 transition-all duration-300 font-semibold rounded-lg py-4 px-6">
+                        Join for Free
+                    </button>
+                    <button class="text-brend-blue-100 font-semibold rounded-lg py-4 px-6">
+                        How it Works
+                    </button>
+                </div>
+            </div>
+            <div class="">
+                <img src="./images/navbar-image.png" alt="navbar-image">
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto py-16 px-4">
+        <div class="text-center">
+            <p class="text-brend-blue-100 font-semibold uppercase">Our Study Resources</p>
+            <h3 class="font-semibold text-5xl mt-5">
+                Browse study resources
+            </h3>
+            <div class="mx-auto w-1/2 mt-8">
+                <label for="default-search"
+                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.1875 23.9375L16.5625 17.3125M18.7708 11.7917C18.7708 12.8067 18.5709 13.8117 18.1825 14.7495C17.7941 15.6872 17.2247 16.5393 16.507 17.257C15.7893 17.9747 14.9372 18.5441 13.9995 18.9325C13.0617 19.3209 12.0567 19.5208 11.0417 19.5208C10.0267 19.5208 9.02159 19.3209 8.08384 18.9325C7.1461 18.5441 6.29404 17.9747 5.57632 17.257C4.8586 16.5393 4.28927 15.6872 3.90085 14.7495C3.51242 13.8117 3.3125 12.8067 3.3125 11.7917C3.3125 9.74176 4.12682 7.77582 5.57632 6.32632C7.02582 4.87682 8.99176 4.0625 11.0417 4.0625C13.0916 4.0625 15.0575 4.87682 16.507 6.32632C17.9565 7.77582 18.7708 9.74176 18.7708 11.7917Z"
+                                stroke="url(#paint0_linear_119_627)" stroke-width="2.94444" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear_119_627" x1="1.63077" y1="14" x2="25.7865" y2="14"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#457EF8" />
+                                    <stop offset="1" stop-color="#5E69DF" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <input type="search" id="default-search"
+                        class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search for your university or school certificate" required />
+                    <button type="submit"
+                        class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                </div>
+                <div class="grid grid-cols-2 gap-7 mt-6">
+                    <div>
+                        <p class="text-left">Choose Region</p>
+                        <select class="border border-gray-300 rounded-lg w-full py-3 px-4">
+                            <option>
+                                All
+                            </option>
+                            <option>
+                                All
+                            </option>
+                            <option>
+                                All
+                            </option>
+                            <option>
+                                All
+                            </option>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="text-left">Choose Study Type</p>
+                        <select class="border border-gray-300 rounded-lg w-full py-3 px-4">
+                            <option>
+                                All
+                            </option>
+                            <option>
+                                All
+                            </option>
+                            <option>
+                                All
+                            </option>
+                            <option>
+                                All
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-12 space-y-2">
+            <div class="grid grid-cols-4 gap-2">
+                <div class="bg-brend-blue-300 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-green-100">
+                        High School
+                    </p>
+                </div>
+                <div class="bg-brend-pink-100 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-pink-300">
+                        High School
+                    </p>
+                </div>
+                <div class="bg-brend-pink-200 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-yellow-100">
+                        High School
+                    </p>
+                </div>
+                <div class="bg-brend-blue-400 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-blue-500">
+                        High School
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-4 gap-2">
+                <div class="bg-brend-blue-300 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-green-100">
+                        High School
+                    </p>
+                </div>
+                <div class="bg-brend-pink-100 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-pink-300">
+                        High School
+                    </p>
+                </div>
+                <div class="bg-brend-pink-200 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-yellow-100">
+                        High School
+                    </p>
+                </div>
+                <div class="bg-brend-blue-400 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-blue-500">
+                        High School
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-4 gap-2">
+                <div class="bg-brend-blue-300 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-green-100">
+                        High School
+                    </p>
+                </div>
+                <div class="bg-brend-pink-100 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-pink-300">
+                        High School
+                    </p>
+                </div>
+                <div class="bg-brend-pink-200 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-yellow-100">
+                        High School
+                    </p>
+                </div>
+                <div class="bg-brend-blue-400 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-blue-500">
+                        High School
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-4 gap-2">
+                <div class="bg-brend-blue-300 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-green-100">
+                        High School
+                    </p>
+                </div>
+                <div class="bg-brend-pink-100 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-pink-300">
+                        High School
+                    </p>
+                </div>
+                <div class="bg-brend-pink-200 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-yellow-100">
+                        High School
+                    </p>
+                </div>
+                <div class="bg-brend-blue-400 rounded-lg py-7 px-4">
+                    <h4 class="font-medium text-xl">
+                        Charles Sturt University
+                    </h4>
+                    <p class="text-brend-blue-500">
+                        High School
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-8">
+            <button class="text-brend-blue-100 font-semibold rounded-lg border border-gray-300 px-4 py-3">
+                View More
+            </button>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto py-20">
+        <div class="text-center space-y-5">
+            <p class="text-brend-blue-100 font-semibold uppercase">contributed by classmates</p>
+            <h3 class="font-semibold text-5xl">
+                Contribute and use Thinkswap for <span class="text-brend-blue-100">free</span>
+            </h3>
+        </div>
+        <div class="grid grid-cols-2">
+            <div class="space-y-11">
+                <img src="./images/hero-image.png" alt="hero-image">
+                <div class="space-y-4">
+                    <h3 class="text-brend-black-100 font-semibold text-3xl">
+                        Have something to share? You can use Thinkswap for free!
+                    </h3>
+                    <p class="text-brend-gray-400">
+                        Thinkswap works best when students share. Students who upload their own study resources can
+                        access
+                        new study resources for free. Learn more about uploads and pricing.
+                    </p>
+                    <button class="border border-brend-black-100 rounded-lg font-semibold py-4 px-6 mt-1">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="space-y-11">
+                <img src="./images/hero-image.png" alt="hero-image">
+                <div class="space-y-4">
+                    <h3 class="text-brend-black-100 font-semibold text-3xl">
+                        Earn money by selling your best study <br> notes
+                    </h3>
+                    <p class="text-brend-gray-400">
+                        If you have exceptional study notes, you can join Thinkswap Elite and earn money each time your
+                        notes sell. We have a strong student community, with millions of students browsing Thinkswap’s
+                        study library.
+                    </p>
+                    <button class="border border-brend-black-100 rounded-lg font-semibold py-4 px-6 mt-1">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-brend-blue-100">
+        <div class="max-w-7xl mx-auto py-36">
+            <div class="grid grid-cols-2 gap-14">
+                <div>
+                    <div class="bg-brend-black-200 rounded-md py-10 px-7">
+                        <div class="space-y-5">
+                            <img src="./images/card-image.png" alt="card-image" class="w-full">
+                            <div>
+                                <div class="flex justify-between">
+                                    <h4 class="text-xl font-semibold">
+                                        Othello notes and quotes analysed
+                                    </h4>
+                                    <span class="text-xl font-semibold">
+                                        $55
+                                    </span>
+                                </div>
+                                <p class="text-brend-blue-100 font-medium">
+                                    ENGLISH (ADVANCED)
+                                </p>
+                                <p class="text-brend-gray-400 mt-2">
+                                    9 pages of analyzed quotes from Shakespeare's Othello. Made for the end-of-year
+                                    preliminary exam.
+                                </p>
+                                <div class="flex justify-between mt-5">
+                                    <div class="flex items-center gap-1">
+                                        <img src="./images/like-icon.svg" alt="like-icon">
+                                        <p class="text-brend-black-100 text-sm font-semibold">
+                                            5 Found Useful
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img src="./images/like-icon.svg" alt="like-icon">
+                                        <p class="text-brend-black-100 text-sm font-semibold">
+                                            5 Found Useful
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img src="./images/like-icon.svg" alt="like-icon">
+                                        <p class="text-brend-black-100 text-sm font-semibold">
+                                            5 Found Useful
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img src="./images/like-icon.svg" alt="like-icon">
+                                        <p class="text-brend-black-100 text-sm font-semibold">
+                                            5 Found Useful
+                                        </p>
+                                    </div>
+                                </div>
+                                <button
+                                    class="bg-brend-blue-100 text-white rounded-lg hover:opacity-50 transition-all duration-300 font-semibold w-full py-3 mt-5">
+                                    Add to cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <h3 class="text-white text-5xl font-semibold">
+                        Take a look at some of our amazing documents
+                    </h3>
+                    <div class="space-y-8 mt-9">
+                        <div class="border-l-4 rounded-sm border-brend-yellow-100 py-3 pl-4">
+                            <h4 class="text-white text-2xl font-semibold">
+                                All our study resources are hand checked
+                            </h4>
+                            <p class="text-white mt-1">
+                                Every document on Thinkswap has been meticulously hand checked to ensure they meet the
+                                highest standards for student study. No wading through irrelevant content that is of no
+                                use
+                                to your subject.
+                            </p>
+                        </div>
+                        <div class="border-l-4 rounded-sm border-brend-yellow-100 py-3 pl-4">
+                            <h4 class="text-white text-2xl font-semibold">
+                                All our study resources are hand checked
+                            </h4>
+                            <p class="text-white mt-1">
+                                Every document on Thinkswap has been meticulously hand checked to ensure they meet the
+                                highest standards for student study. No wading through irrelevant content that is of no
+                                use
+                                to your subject.
+                            </p>
+                        </div>
+                        <div class="border-l-4 rounded-sm border-brend-yellow-100 py-3 pl-4">
+                            <h4 class="text-white text-2xl font-semibold">
+                                All our study resources are hand checked
+                            </h4>
+                            <p class="text-white mt-1">
+                                Every document on Thinkswap has been meticulously hand checked to ensure they meet the
+                                highest standards for student study. No wading through irrelevant content that is of no
+                                use
+                                to your subject.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- odiljon -->
+    <div class="max-w-7xl mx-auto mt-12">
+        <div class="flex justify-center">
+            <div class="border border-gray-200 text-center inline-block rounded-full px-2 py-3">
+                <p class="font-semibold text-color-blue uppercase">
+                    Boost your grades
+                </p>
+            </div>
+        </div>
+        <div>
+            <h1 class="font-bold text-4xl text-center">
+                Trusted by students across the globe
+            </h1>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-2 pt-9 p-3">
+            <div class="xl:flex gap-4 border-4 border-color-blue rounded-lg py-6 lg:px-10">
+                <img src="./images/logo.jpg" alt="" class="mx-auto">
+                <p class="font-semibold text-2xl text-center">Austrailia</p>
+            </div>
+            <div class="xl:flex gap-4 border-4 border-gray-200 rounded-lg py-6 lg:px-10">
+                <img src="./images/logo.jpg" alt="" class="mx-auto">
+                <p class="font-semibold text-2xl text-center">Austrailia</p>
+            </div>
+            <div class="xl:flex gap-4 border-4 border-gray-200 rounded-lg py-6 lg:px-10">
+                <img src="./images/logo.jpg" alt="" class="mx-auto">
+                <p class="font-semibold text-2xl text-center">Austrailia</p>
+            </div>
+            <div class="xl:flex gap-4 border-4 border-gray-200 rounded-lg py-6 lg:px-10">
+                <img src="./images/logo.jpg" alt="" class="mx-auto">
+                <p class="font-semibold text-2xl text-center">Austrailia</p>
+            </div>
+            <div class="xl:flex gap-4 border-4 border-gray-200 rounded-lg py-6 lg:px-10">
+                <img src="./images/logo.jpg" alt="" class="mx-auto">
+                <p class="font-semibold text-2xl text-center">Austrailia</p>
+            </div>
+            <div class="xl:flex gap-4 border-4 border-gray-200 rounded-lg py-6 lg:px-10">
+                <img src="./images/logo.jpg" alt="" class="mx-auto">
+                <p class="font-semibold text-2xl text-center">Austrailia</p>
+            </div>
+            <div class="xl:flex gap-4 border-4 border-gray-200 rounded-lg py-6 lg:px-10">
+                <img src="./images/logo.jpg" alt="" class="mx-auto">
+                <p class="font-semibold text-2xl text-center">Austrailia</p>
+            </div>
+            <div class="xl:flex gap-4 border-4 border-gray-200 rounded-lg py-6 lg:px-10">
+                <img src="./images/logo.jpg" alt="" class="mx-auto">
+                <p class="font-semibold text-2xl text-center">Austrailia</p>
+            </div>
+            <div class="xl:flex gap-4 border-4 border-gray-200 rounded-lg py-6 lg:px-10">
+                <img src="./images/logo.jpg" alt="" class="mx-auto">
+                <p class="font-semibold text-2xl text-center">Austrailia</p>
+            </div>
+            <div class="xl:flex gap-4 border-4 border-gray-200 rounded-lg py-6 lg:px-10">
+                <img src="./images/logo.jpg" alt="" class="mx-auto">
+                <p class="font-semibold text-2xl text-center">Austrailia</p>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 items-center gap-20 mt-28 p-3">
+            <div class="space-y-6">
+                <p class="font-bold text-color-blue text-center sm:text-left pb-8">Academic integrity</p>
+                <h2 class="font-bold text-4xl text-center sm:text-left">
+                    Students are required to always deal <span class="text-color-blue">ethically</span> with <span
+                        class="text-color-blue">work </span>on
+                    Thinkswap.
+                </h2>
+                <p class="text-color-grey">
+                    Using prior examples of student work is an amazing way to study and improve, however all students
+                    using
+                    Thinkswap are required to act with academic integrity.
+                </p>
+                <p class="text-color-grey">
+                    Student education programmes, collaboration with university academics, watermarking, and submission
+                    of all
+                    documents to plagiarism detection tools are amongst the many ways we protect student work on
+                    Thinkswap.
+                </p>
+            </div>
+            <div>
+                <img src="./images/logo1.jpg" alt="logo1">
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto">
+        <div class="grid justify-center text-center mt-24">
+            <div
+                class="border border-color-greys bg-color-greys text-center justify-center inline-block rounded-full px-2 py-3">
+                <p class="font-semibold text-color-blue uppercase">
+                    Boost your grades
+                </p>
+            </div>
+            <div class="mt-2 ">
+                <h2 class="font-bold text-4xl pb-2">
+                    How Thinkswap <span class="text-color-blue">works</span>
+                </h2>
+                <p class="text-color-grey">
+                    Find the study resource that suits your needs
+                </p>
+            </div>
+        </div>
+        <div class="grid xl:grid-cols-2 gap-6 mt-16 p-3">
+            <div class="bg-color-grayt rounded-lg px-5 lg:px-8 py-8">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_111_5521)">
+                        <path
+                            d="M2.06516 77.9365C0.733281 76.6048 0 74.8341 0 72.9509C0 71.0676 0.733281 69.297 2.06516 67.9652L53.6059 16.4245C54.5211 15.5092 56.0052 15.5093 56.9205 16.4245L63.5773 23.0812C64.0169 23.5207 64.2639 24.1168 64.2639 24.7384C64.2639 25.3599 64.017 25.956 63.5773 26.3956L12.0364 77.9365C10.6619 79.311 8.85625 79.9982 7.05078 79.9982C5.24531 79.9982 3.43969 79.311 2.06516 77.9365Z"
+                            fill="#464B52" />
+                        <path
+                            d="M63.5776 23.0812C64.0171 23.5208 64.2642 24.1169 64.2642 24.7384C64.2642 25.36 64.0173 25.9561 63.5776 26.3956L12.0367 77.9366C10.6621 79.3111 8.85652 79.9983 7.05105 79.9983C5.24559 79.9983 3.43996 79.3111 2.06543 77.9366L60.2492 19.7528L63.5776 23.0812Z"
+                            fill="#292B2F" />
+                        <path
+                            d="M49.4141 61.1736C66.3062 61.1736 80 47.4798 80 30.5876C80 13.6955 66.3062 0.00170898 49.4141 0.00170898C32.5219 0.00170898 18.8281 13.6955 18.8281 30.5876C18.8281 47.4798 32.5219 61.1736 49.4141 61.1736Z"
+                            fill="#31AB81" />
+                        <path
+                            d="M71.0313 8.97009C76.5698 14.5085 79.9999 22.1549 79.9999 30.5876C79.9999 47.4528 66.2791 61.1735 49.414 61.1735C40.9815 61.1735 33.3349 57.7434 27.7966 52.2049L71.0313 8.97009Z"
+                            fill="#31AB81" />
+                        <path
+                            d="M49.4141 51.7595C61.107 51.7595 70.5859 42.2806 70.5859 30.5876C70.5859 18.8947 61.107 9.41577 49.4141 9.41577C37.7212 9.41577 28.2422 18.8947 28.2422 30.5876C28.2422 42.2806 37.7212 51.7595 49.4141 51.7595Z"
+                            fill="#E1FAFF" />
+                        <path
+                            d="M49.4139 51.7595C43.5769 51.7595 38.2839 49.3852 34.4502 45.5514L64.3777 15.6239C68.2114 19.4577 70.5858 24.7506 70.5858 30.5877C70.5858 42.2619 61.0882 51.7595 49.4139 51.7595Z"
+                            fill="#E1FAFF" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_111_5521">
+                            <rect width="80" height="80" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <h3 class="font-semibold text-sm text-color-gray mt-3 pb-3">
+                    Find the study resource that suits your needs
+                </h3>
+                <p class="tex-color-grey">
+                    Explore our vast student authored document library and find a document that serves as a study guide
+                    or
+                    exemplar
+                    to allow you to improve your own understanding of the topic you are studying.
+                </p>
+            </div>
+            <div class="bg-color-grayts rounded-lg px-5 lg:px-8 py-8">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_111_5534)">
+                        <path
+                            d="M56.281 3.42225L55.7652 4.40674C53.3275 9.42261 52.0152 14.9689 51.9212 20.4535L41.7027 27.2034L28.3903 20.4535C28.2963 14.9695 26.9841 9.42261 24.4993 4.35975L24.0306 3.42225C23.5624 2.53174 23.7028 1.40686 24.406 0.703739C25.1555 -0.0463834 26.234 -0.186764 27.1245 0.234989L34.9998 4.17237L38.5155 0.703739C38.9372 0.234989 39.5463 0.000613712 40.1561 0.000613712C40.7652 0.000613712 41.3743 0.234989 41.7961 0.703739L45.3117 4.17237L53.1871 0.234989C54.0776 -0.186764 55.2025 -0.0463834 55.9056 0.703739C56.6087 1.40686 56.7491 2.53174 56.281 3.42225Z"
+                            fill="#FF56D1" />
+                        <path
+                            d="M56.2808 3.42225L55.765 4.40674C53.3273 9.42261 52.015 14.9689 51.921 20.4535L41.7025 27.2034L40.1553 26.4069V0.000613712C40.765 0.000613712 41.3741 0.234989 41.7959 0.703739L45.3115 4.17237L53.1869 0.234989C54.0768 -0.186764 55.2023 -0.0463834 55.9054 0.703739C56.6085 1.40686 56.7489 2.53174 56.2808 3.42225Z"
+                            fill="#FF56D1" />
+                        <path
+                            d="M70.6244 54.0625C70.6244 69.7186 58.6713 80 40.1563 80C21.6406 80 9.6875 69.7186 9.6875 54.0625C9.6875 46.9849 12.1722 40.094 16.6248 34.6564L28.3905 20.4535H51.9214L63.6872 34.6564C66.734 38.4064 68.8904 42.8125 69.8743 47.547C70.39 49.6564 70.6244 51.8591 70.6244 54.0625Z"
+                            fill="#FF56D1" />
+                        <path
+                            d="M70.6244 54.0625C70.6244 69.7186 58.6713 80 40.1562 80V20.4535H51.9214L63.6871 34.6564C66.734 38.4064 68.8904 42.8125 69.8743 47.547C70.39 49.6564 70.6244 51.8591 70.6244 54.0625Z"
+                            fill="#FF56D1" />
+                        <path
+                            d="M13.2027 23.9087C12.0815 23.2611 10.6484 23.6456 10.0008 24.7662C9.35382 25.8874 9.73773 27.3205 10.8589 27.9681C11.9795 28.6151 13.4133 28.2312 14.0602 27.11C14.7078 25.9894 14.3233 24.5556 13.2027 23.9087Z"
+                            fill="#FFD400" />
+                        <path
+                            d="M47.1406 54.7656C47.1406 57.8125 45.2186 60.3436 42.4995 61.3281V63.4375C42.4995 64.7498 41.4686 65.7813 40.1564 65.7813C38.8435 65.7813 37.8126 64.7498 37.8126 63.4375V61.3751C35.0935 60.3906 33.0781 57.8125 33.0781 54.7656C33.0781 53.4534 34.156 52.4219 35.4219 52.4219C36.7341 52.4219 37.7656 53.4534 37.7656 54.7656C37.7656 56.0315 38.8435 57.1094 40.1094 57.1094H40.1564C41.4686 57.063 42.4531 56.0315 42.4531 54.7656C42.4531 53.4534 41.4686 52.4689 40.1564 52.4219H40.1094C36.2654 52.4219 33.0781 49.2346 33.0781 45.3906C33.0781 42.2974 35.0935 39.7192 37.8126 38.7817V35.3131C37.8126 34.0002 38.8435 32.9694 40.1564 32.9694C41.4686 32.9694 42.4995 34.0002 42.4995 35.3131V38.7817C45.2186 39.7662 47.1406 42.3438 47.1406 45.3906C47.1406 46.6565 46.1091 47.7344 44.7969 47.7344C43.531 47.7344 42.4531 46.6565 42.4531 45.3906C42.4531 44.0784 41.4686 43.0939 40.1564 43.0469H40.1094C38.8435 43.0469 37.7656 44.0784 37.7656 45.3906C37.7656 46.6565 38.8435 47.7344 40.1094 47.7344H40.1564C44.0468 47.7814 47.1406 50.8753 47.1406 54.7656Z"
+                            fill="white" />
+                        <path
+                            d="M72.9678 18.9069H70.624V16.5631C70.624 15.2673 69.5761 14.2194 68.2803 14.2194C66.9851 14.2194 65.9365 15.2673 65.9365 16.5631V18.9069H63.5928C62.2976 18.9069 61.249 19.9548 61.249 21.2506C61.249 22.5458 62.2976 23.5944 63.5928 23.5944H65.9365V25.9381C65.9365 27.2333 66.9851 28.2819 68.2803 28.2819C69.5761 28.2819 70.624 27.2333 70.624 25.9381V23.5944H72.9678C74.2636 23.5944 75.3115 22.5458 75.3115 21.2506C75.3115 19.9548 74.2636 18.9069 72.9678 18.9069Z"
+                            fill="#FDBF00" />
+                        <path
+                            d="M16.7188 4.68811H14.375V2.34436C14.375 1.04858 13.3264 0.000610352 12.0313 0.000610352C10.7355 0.000610352 9.6875 1.04858 9.6875 2.34436V4.68811H7.34375C6.04797 4.68811 5 5.73609 5 7.03186C5 8.32703 6.04797 9.37561 7.34375 9.37561H9.6875V11.7194C9.6875 13.0145 10.7355 14.0631 12.0313 14.0631C13.3264 14.0631 14.375 13.0145 14.375 11.7194V9.37561H16.7188C18.0139 9.37561 19.0625 8.32703 19.0625 7.03186C19.0625 5.73609 18.0139 4.68811 16.7188 4.68811Z"
+                            fill="#FFD400" />
+                        <path
+                            d="M47.1405 54.7656C47.1405 57.8125 45.2185 60.3436 42.4994 61.3281V63.4375C42.4994 64.7498 41.4685 65.7813 40.1562 65.7813V57.1094C41.4685 57.063 42.453 56.0315 42.453 54.7656C42.453 53.4534 41.4685 52.4689 40.1562 52.4219V47.7344C44.0466 47.7814 47.1405 50.8752 47.1405 54.7656Z"
+                            fill="white" />
+                        <path
+                            d="M47.1405 45.3906C47.1405 46.6565 46.109 47.7344 44.7968 47.7344C43.5309 47.7344 42.453 46.6565 42.453 45.3906C42.453 44.0784 41.4685 43.0939 40.1562 43.0469V32.9694C41.4685 32.9694 42.4994 34.0002 42.4994 35.3131V38.7817C45.2185 39.7656 47.1405 42.3438 47.1405 45.3906Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_111_5534">
+                            <rect width="80" height="80" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <h3 class="font-semibold text-sm text-color-gray mt-3 pb-3">
+                    Earn or purchase Exchange Credits to make your trade
+                </h3>
+                <p class="tex-color-grey">
+                    Explore our vast student authored document library and find a document that serves as a study guide
+                    or
+                    exemplar
+                    to allow you to improve your own understanding of the topic you are studying.
+                </p>
+            </div>
+            <div class="bg-color-grays rounded-lg px-5 lg:px-8 py-8">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_111_5550)">
+                        <path
+                            d="M77.1807 66.7657C77.1343 66.7657 53.5003 76.3903 49.375 78.0309C48.9996 78.1719 48.8122 78.2653 48.7658 78.2653C43.5156 80.656 36.6253 80.6091 31.0003 77.7502L9.53125 69.2028V43.8439L22.9376 41.875C25.3284 41.2188 27.6251 41.4532 29.6875 42.4847C30.1562 42.7191 48.0157 51.6717 49.1406 52.2344C49.2346 52.2814 49.328 52.3284 49.375 52.3754C51.4843 53.5003 52.3284 56.2188 51.203 58.5156C50.7812 59.3597 50.1251 60.0628 49.375 60.4846C48.0627 61.2347 46.4221 61.3281 44.9218 60.5786C44.4537 60.3442 36.203 56.2658 36.203 56.2658C33.2501 54.8126 29.6875 55.6097 27.6251 58.1878C26.781 59.2187 26.969 60.6719 27.9999 61.4691C28.985 62.2656 30.4846 62.1252 31.2811 61.0937C31.9842 60.2502 33.1561 59.9688 34.1876 60.4376L42.8125 64.7967C44.1717 65.4528 45.625 65.7812 47.0312 65.7812C47.3126 65.7812 48.1561 65.5938 49.375 65.266C55.9845 63.5314 73.7591 58.0938 73.7591 58.0938C76.1498 57.2973 78.634 58.5156 79.5715 60.6719C80.603 62.4066 79.7595 65.6402 77.1807 66.7657Z"
+                            fill="#FFCEBF" />
+                        <path
+                            d="M77.1808 66.7657C77.1344 66.7657 53.5004 76.3903 49.375 78.031V65.2655C55.9845 63.5315 73.7591 58.0938 73.7591 58.0938C76.1499 57.2967 78.634 58.5156 79.5715 60.672C80.603 62.4066 79.7595 65.6402 77.1808 66.7657Z"
+                            fill="#FFBFAB" />
+                        <path
+                            d="M49.375 0C37.7502 0 28.2812 9.62523 28.2812 21.25C28.2812 32.8747 37.7502 42.3437 49.375 42.3437C60.9997 42.3437 70.4687 32.8747 70.4687 21.25C70.4687 9.62523 60.9997 0 49.375 0Z"
+                            fill="#22A7F2" />
+                        <path
+                            d="M49.375 42.3437V0C60.9997 0 70.4687 9.62523 70.4687 21.25C70.4687 32.8747 60.9997 42.3437 49.375 42.3437Z"
+                            fill="#22A7F2" />
+                        <path
+                            d="M49.375 4.6875C40.3284 4.6875 32.9688 12.2034 32.9688 21.25C32.9688 30.2966 40.3284 37.6562 49.375 37.6562C58.4216 37.6562 65.7812 30.2966 65.7812 21.25C65.7812 12.2034 58.4216 4.6875 49.375 4.6875Z"
+                            fill="#22A7F2" />
+                        <path
+                            d="M65.7812 21.25C65.7812 30.2966 58.4216 37.6562 49.375 37.6562V4.6875C58.4216 4.6875 65.7812 12.2034 65.7812 21.25Z"
+                            fill="#22A7F2" />
+                        <path
+                            d="M56.4062 25.9375C56.4062 28.9844 54.4379 31.5625 51.7187 32.547V35.3125C51.7187 36.6253 50.6879 37.6562 49.375 37.6562C48.0621 37.6562 47.0312 36.6253 47.0312 35.3125V32.547C44.3121 31.5625 42.3438 28.9844 42.3438 25.9375C42.3438 24.6246 43.3746 23.5937 44.6875 23.5937C46.0004 23.5937 47.0312 24.6246 47.0312 25.9375C47.0312 27.2503 48.0621 28.2812 49.375 28.2812C50.6879 28.2812 51.7187 27.2503 51.7187 25.9375C51.7187 24.6246 50.6879 23.5937 49.375 23.5937C45.484 23.5937 42.3438 20.4535 42.3438 16.5625C42.3438 13.5156 44.3121 10.9375 47.0312 9.95361V7.03125C47.0312 5.71838 48.0621 4.6875 49.375 4.6875C50.6879 4.6875 51.7187 5.71838 51.7187 7.03125V9.95361C54.4379 10.9375 56.4062 13.5156 56.4062 16.5625C56.4062 17.8754 55.3754 18.9062 54.0625 18.9062C52.7496 18.9062 51.7187 17.8754 51.7187 16.5625C51.7187 15.2496 50.6879 14.2187 49.375 14.2187C48.0621 14.2187 47.0312 15.2496 47.0312 16.5625C47.0312 17.8754 48.0621 18.9062 49.375 18.9062C53.266 18.9062 56.4062 22.0465 56.4062 25.9375Z"
+                            fill="white" />
+                        <path
+                            d="M11.875 75.3125H2.34375C1.04919 75.3125 0 74.2633 0 72.9687V40C0 38.7054 1.04919 37.6562 2.34375 37.6562H7.18749C11.0705 37.6562 14.2187 40.8044 14.2187 44.6875V72.9687C14.2187 74.2633 13.1695 75.3125 11.875 75.3125Z"
+                            fill="#22A7F2" />
+                        <path
+                            d="M56.4062 25.9375C56.4062 28.9844 54.4379 31.5625 51.7187 32.547V35.3125C51.7187 36.6253 50.6879 37.6562 49.375 37.6562V28.2812C50.6879 28.2812 51.7187 27.2504 51.7187 25.9375C51.7187 24.6246 50.6879 23.5937 49.375 23.5937V18.9062C53.266 18.9062 56.4062 22.0465 56.4062 25.9375Z"
+                            fill="white" />
+                        <path
+                            d="M49.375 14.2187V4.6875C50.6879 4.6875 51.7187 5.71838 51.7187 7.03125V9.95361C54.4379 10.9375 56.4062 13.5156 56.4062 16.5625C56.4062 17.8754 55.3754 18.9062 54.0625 18.9062C52.7496 18.9062 51.7187 17.8754 51.7187 16.5625C51.7187 15.2496 50.6879 14.2187 49.375 14.2187Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_111_5550">
+                            <rect width="80" height="79.9999" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <h3 class="font-semibold text-sm text-color-gray mt-3 pb-3">
+                    Find the study resource that suits your needs
+                </h3>
+                <p class="tex-color-grey">
+                    Explore our vast student authored document library and find a document that serves as a study guide
+                    or
+                    exemplar
+                    to allow you to improve your own understanding of the topic you are studying.
+                </p>
+            </div>
+            <div class="bg-color-grayy rounded-lg px-5 lg:px-8 py-8">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_111_5566)">
+                        <path
+                            d="M5.02051 44.133C5.02051 45.4273 6.06988 46.1094 7.36426 46.1094C26.9455 46.1094 39.9997 64.9375 39.9997 80V33.8906C39.9997 18.8281 26.9455 0 7.36426 0C6.06988 0 5.02051 1.04937 5.02051 2.34375V44.133Z"
+                            fill="#FFEED0" />
+                        <path
+                            d="M74.9792 44.133C74.9792 45.4273 73.9298 46.1094 72.6355 46.1094C53.0542 46.1094 40 64.9375 40 80V33.8906C40 18.8281 53.0542 0 72.6355 0C73.9298 0 74.9792 1.04937 74.9792 2.34375V44.133Z"
+                            fill="#FFEED0" />
+                        <path
+                            d="M34.9792 30.125C26.2805 12.552 2.34375 12.552 2.34375 12.552C1.04937 12.552 0 13.6014 0 14.8958V56.3176C0 57.612 1.04937 58.6614 2.34375 58.6614C2.34375 58.6614 26.2805 58.6614 34.9792 76.2343C36.2353 78.6968 40 77.8587 40 75.0943V55.3351C40 48.2183 38.213 36.4647 34.9792 30.125Z"
+                            fill="#FFA500" />
+                        <path
+                            d="M45.0208 30.125C53.7195 12.552 77.6562 12.552 77.6562 12.552C78.9506 12.552 80 13.6014 80 14.8958V56.3176C80 57.612 78.9506 58.6614 77.6562 58.6614C77.6562 58.6614 53.7195 58.6614 45.0208 76.2343C43.7647 78.6968 40 77.8587 40 75.0943V55.3351C40 48.2183 41.787 36.4647 45.0208 30.125Z"
+                            fill="#FFA500" />
+                        <path
+                            d="M45.0212 30.125C42.5107 35.1458 37.49 35.1458 34.9795 30.125V76.2344C37.49 81.2552 42.5107 81.2552 45.0212 76.2344V30.125Z"
+                            fill="#FFA500" />
+                        <path
+                            d="M40 33.8906V80C41.8828 80 43.7656 78.7448 45.0208 76.2344V30.125C43.7656 32.6353 41.8828 33.8906 40 33.8906Z"
+                            fill="#FFA500" />
+                        <path
+                            d="M53.0919 36.5249C52.3914 35.4364 52.7059 33.9861 53.7944 33.2856C57.5753 30.8524 62.0403 29.0044 67.0656 27.7928C68.3239 27.4892 69.59 28.2636 69.8934 29.5219C70.1969 30.7803 69.4227 32.0463 68.1644 32.3497C63.6508 33.4378 59.6697 35.0789 56.3314 37.2274C54.9386 38.1233 53.5723 37.2714 53.0919 36.5249Z"
+                            fill="#151717" />
+                        <path
+                            d="M53.0919 50.332C52.3914 49.2435 52.7059 47.7932 53.7944 47.0928C57.5753 44.6595 62.0403 42.8115 67.0656 41.5999C68.3239 41.2964 69.59 42.0707 69.8934 43.329C70.1969 44.5874 69.4227 45.8534 68.1644 46.1568C63.6508 47.2449 59.6697 48.886 56.3314 51.0345C54.9386 51.9306 53.5723 51.0787 53.0919 50.332Z"
+                            fill="#151717" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_111_5566">
+                            <rect width="80" height="80" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <h3 class="font-semibold text-sm text-color-gray mt-3 pb-3">
+                    Find the study resource that suits your needs
+                </h3>
+                <p class="tex-color-grey">
+                    Explore our vast student authored document library and find a document that serves as a study guide
+                    or
+                    exemplar
+                    to allow you to improve your own understanding of the topic you are studying.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto">
+        <div class="mt-28">
+            <div class="p-3">
+                <div class="grid justify-center">
+                    <div
+                        class="border border-color-greys bg-color-greys text-center justify-center inline-block rounded-full px-2 py-3">
+                        <p class="font-semibold text-color-blue uppercase">
+                            Boost your grades
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-4xl text-center mt-7">
+                        What <span class="text-color-blue">students</span> say about us
+                    </h2>
+                </div>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8 mt-7 p-3">
+                <!-- 1 -->
+                <div class="border border-gray-200 text-center rounded-lg px-8 py-8">
+                    <svg class="mx-auto" width="117" height="19" viewBox="0 0 117 19" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_111_5398)">
+                            <path
+                                d="M9.57088 0.612343C9.91462 -0.204115 11.0854 -0.204114 11.4291 0.612346L13.4579 5.43123C13.6029 5.77543 13.9306 6.01061 14.3067 6.0404L19.5727 6.45748C20.4649 6.52814 20.8267 7.62813 20.1469 8.2034L16.1348 11.5987C15.8482 11.8412 15.723 12.2218 15.8106 12.5843L17.0363 17.661C17.244 18.5211 16.2969 19.201 15.533 18.7401L11.0245 16.0196C10.7025 15.8252 10.2975 15.8252 9.97548 16.0196L5.46699 18.7401C4.70311 19.201 3.75596 18.5211 3.96363 17.661L5.18942 12.5843C5.27698 12.2218 5.15182 11.8412 4.86526 11.5987L0.853062 8.2034C0.173282 7.62813 0.535068 6.52814 1.42729 6.45748L6.69336 6.0404C7.0695 6.01061 7.39716 5.77543 7.54207 5.43123L9.57088 0.612343Z"
+                                fill="#FFBA08" />
+                            <path
+                                d="M33.5709 0.612343C33.9146 -0.204115 35.0854 -0.204114 35.4291 0.612346L37.4579 5.43123C37.6029 5.77543 37.9306 6.01061 38.3067 6.0404L43.5727 6.45748C44.4649 6.52814 44.8267 7.62813 44.1469 8.2034L40.1348 11.5987C39.8482 11.8412 39.723 12.2218 39.8106 12.5843L41.0363 17.661C41.244 18.5211 40.2969 19.201 39.533 18.7401L35.0245 16.0196C34.7025 15.8252 34.2975 15.8252 33.9755 16.0196L29.467 18.7401C28.7031 19.201 27.756 18.5211 27.9636 17.661L29.1894 12.5843C29.277 12.2218 29.1518 11.8412 28.8653 11.5987L24.8531 8.2034C24.1733 7.62813 24.5351 6.52814 25.4273 6.45748L30.6934 6.0404C31.0695 6.01061 31.3972 5.77543 31.5421 5.43123L33.5709 0.612343Z"
+                                fill="#FFBA08" />
+                            <path
+                                d="M57.5709 0.612343C57.9146 -0.204115 59.0854 -0.204114 59.4291 0.612346L61.4579 5.43123C61.6029 5.77543 61.9306 6.01061 62.3067 6.0404L67.5727 6.45748C68.4649 6.52814 68.8267 7.62813 68.1469 8.2034L64.1348 11.5987C63.8482 11.8412 63.723 12.2218 63.8106 12.5843L65.0363 17.661C65.244 18.5211 64.2969 19.201 63.533 18.7401L59.0245 16.0196C58.7025 15.8252 58.2975 15.8252 57.9755 16.0196L53.467 18.7401C52.7031 19.201 51.756 18.5211 51.9636 17.661L53.1894 12.5843C53.277 12.2218 53.1518 11.8412 52.8653 11.5987L48.8531 8.2034C48.1733 7.62813 48.5351 6.52814 49.4273 6.45748L54.6934 6.0404C55.0695 6.01061 55.3972 5.77543 55.5421 5.43123L57.5709 0.612343Z"
+                                fill="#FFBA08" />
+                            <path
+                                d="M81.5706 0.612343C81.9144 -0.204115 83.0851 -0.204114 83.4289 0.612346L85.4576 5.43123C85.6026 5.77543 85.9303 6.01061 86.3064 6.0404L91.5724 6.45748C92.4646 6.52814 92.8264 7.62813 92.1466 8.2034L88.1345 11.5987C87.848 11.8412 87.7228 12.2218 87.8103 12.5843L89.0361 17.661C89.2438 18.5211 88.2966 19.201 87.5328 18.7401L83.0243 16.0196C82.7023 15.8252 82.2973 15.8252 81.9752 16.0196L77.4667 18.7401C76.7029 19.201 75.7557 18.5211 75.9634 17.661L77.1892 12.5843C77.2767 12.2218 77.1516 11.8412 76.865 11.5987L72.8528 8.2034C72.173 7.62813 72.5348 6.52814 73.427 6.45748L78.6931 6.0404C79.0693 6.01061 79.3969 5.77543 79.5418 5.43123L81.5706 0.612343Z"
+                                fill="#FFBA08" />
+                            <path
+                                d="M105.571 0.612343C105.914 -0.204115 107.085 -0.204114 107.429 0.612346L109.458 5.43123C109.603 5.77543 109.93 6.01061 110.306 6.0404L115.572 6.45748C116.465 6.52814 116.826 7.62813 116.147 8.2034L112.135 11.5987C111.848 11.8412 111.723 12.2218 111.81 12.5843L113.036 17.661C113.244 18.5211 112.297 19.201 111.533 18.7401L107.024 16.0196C106.702 15.8252 106.297 15.8252 105.975 16.0196L101.467 18.7401C100.703 19.201 99.7557 18.5211 99.9634 17.661L101.189 12.5843C101.277 12.2218 101.152 11.8412 100.865 11.5987L96.8528 8.2034C96.173 7.62813 96.5348 6.52814 97.427 6.45748L102.693 6.0404C103.069 6.01061 103.397 5.77543 103.542 5.43123L105.571 0.612343Z"
+                                fill="#FFBA08" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_111_5398">
+                                <rect width="116" height="18.8889" fill="white" transform="translate(0.5)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <p class="text-color-grey mt-8">
+                        "Using FlowBite has been fantastic for my workflow. It made it really easy to create a very good
+                        looking
+                        project in no time.Every designer should have this in their toolbox!"
+                    </p>
+                    <img src="./images/logo2.jpg" alt="" class="mx-auto mt-8">
+                    <p class="font-semibold mt-3">
+                        Roberta Casas
+                    </p>
+                    <p class="text-color-blue">
+                        Web developer @themesberg
+                    </p>
+                </div>
+                <!-- 2 -->
+                <div class="border border-gray-200 text-center rounded-lg px-8 py-8">
+                    <svg class="mx-auto" width="117" height="19" viewBox="0 0 117 19" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_111_5398)">
+                            <path
+                                d="M9.57088 0.612343C9.91462 -0.204115 11.0854 -0.204114 11.4291 0.612346L13.4579 5.43123C13.6029 5.77543 13.9306 6.01061 14.3067 6.0404L19.5727 6.45748C20.4649 6.52814 20.8267 7.62813 20.1469 8.2034L16.1348 11.5987C15.8482 11.8412 15.723 12.2218 15.8106 12.5843L17.0363 17.661C17.244 18.5211 16.2969 19.201 15.533 18.7401L11.0245 16.0196C10.7025 15.8252 10.2975 15.8252 9.97548 16.0196L5.46699 18.7401C4.70311 19.201 3.75596 18.5211 3.96363 17.661L5.18942 12.5843C5.27698 12.2218 5.15182 11.8412 4.86526 11.5987L0.853062 8.2034C0.173282 7.62813 0.535068 6.52814 1.42729 6.45748L6.69336 6.0404C7.0695 6.01061 7.39716 5.77543 7.54207 5.43123L9.57088 0.612343Z"
+                                fill="#FFBA08" />
+                            <path
+                                d="M33.5709 0.612343C33.9146 -0.204115 35.0854 -0.204114 35.4291 0.612346L37.4579 5.43123C37.6029 5.77543 37.9306 6.01061 38.3067 6.0404L43.5727 6.45748C44.4649 6.52814 44.8267 7.62813 44.1469 8.2034L40.1348 11.5987C39.8482 11.8412 39.723 12.2218 39.8106 12.5843L41.0363 17.661C41.244 18.5211 40.2969 19.201 39.533 18.7401L35.0245 16.0196C34.7025 15.8252 34.2975 15.8252 33.9755 16.0196L29.467 18.7401C28.7031 19.201 27.756 18.5211 27.9636 17.661L29.1894 12.5843C29.277 12.2218 29.1518 11.8412 28.8653 11.5987L24.8531 8.2034C24.1733 7.62813 24.5351 6.52814 25.4273 6.45748L30.6934 6.0404C31.0695 6.01061 31.3972 5.77543 31.5421 5.43123L33.5709 0.612343Z"
+                                fill="#FFBA08" />
+                            <path
+                                d="M57.5709 0.612343C57.9146 -0.204115 59.0854 -0.204114 59.4291 0.612346L61.4579 5.43123C61.6029 5.77543 61.9306 6.01061 62.3067 6.0404L67.5727 6.45748C68.4649 6.52814 68.8267 7.62813 68.1469 8.2034L64.1348 11.5987C63.8482 11.8412 63.723 12.2218 63.8106 12.5843L65.0363 17.661C65.244 18.5211 64.2969 19.201 63.533 18.7401L59.0245 16.0196C58.7025 15.8252 58.2975 15.8252 57.9755 16.0196L53.467 18.7401C52.7031 19.201 51.756 18.5211 51.9636 17.661L53.1894 12.5843C53.277 12.2218 53.1518 11.8412 52.8653 11.5987L48.8531 8.2034C48.1733 7.62813 48.5351 6.52814 49.4273 6.45748L54.6934 6.0404C55.0695 6.01061 55.3972 5.77543 55.5421 5.43123L57.5709 0.612343Z"
+                                fill="#FFBA08" />
+                            <path
+                                d="M81.5706 0.612343C81.9144 -0.204115 83.0851 -0.204114 83.4289 0.612346L85.4576 5.43123C85.6026 5.77543 85.9303 6.01061 86.3064 6.0404L91.5724 6.45748C92.4646 6.52814 92.8264 7.62813 92.1466 8.2034L88.1345 11.5987C87.848 11.8412 87.7228 12.2218 87.8103 12.5843L89.0361 17.661C89.2438 18.5211 88.2966 19.201 87.5328 18.7401L83.0243 16.0196C82.7023 15.8252 82.2973 15.8252 81.9752 16.0196L77.4667 18.7401C76.7029 19.201 75.7557 18.5211 75.9634 17.661L77.1892 12.5843C77.2767 12.2218 77.1516 11.8412 76.865 11.5987L72.8528 8.2034C72.173 7.62813 72.5348 6.52814 73.427 6.45748L78.6931 6.0404C79.0693 6.01061 79.3969 5.77543 79.5418 5.43123L81.5706 0.612343Z"
+                                fill="#FFBA08" />
+                            <path
+                                d="M105.571 0.612343C105.914 -0.204115 107.085 -0.204114 107.429 0.612346L109.458 5.43123C109.603 5.77543 109.93 6.01061 110.306 6.0404L115.572 6.45748C116.465 6.52814 116.826 7.62813 116.147 8.2034L112.135 11.5987C111.848 11.8412 111.723 12.2218 111.81 12.5843L113.036 17.661C113.244 18.5211 112.297 19.201 111.533 18.7401L107.024 16.0196C106.702 15.8252 106.297 15.8252 105.975 16.0196L101.467 18.7401C100.703 19.201 99.7557 18.5211 99.9634 17.661L101.189 12.5843C101.277 12.2218 101.152 11.8412 100.865 11.5987L96.8528 8.2034C96.173 7.62813 96.5348 6.52814 97.427 6.45748L102.693 6.0404C103.069 6.01061 103.397 5.77543 103.542 5.43123L105.571 0.612343Z"
+                                fill="#FFBA08" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_111_5398">
+                                <rect width="116" height="18.8889" fill="white" transform="translate(0.5)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <p class="text-color-grey mt-8">
+                        "Using FlowBite has been fantastic for my workflow. It made it really easy to create a very good
+                        looking
+                        project in no time.Every designer should have this in their toolbox!"
+                    </p>
+                    <img src="./images/logo2.jpg" alt="" class="mx-auto mt-8">
+                    <p class="font-semibold mt-3">
+                        Roberta Casas
+                    </p>
+                    <p class="text-color-blue">
+                        Web developer @themesberg
+                    </p>
+                </div>
+                <!-- 3 -->
+                <div class="border border-gray-200 text-center rounded-lg px-8 py-8">
+                    <svg class="mx-auto" width="117" height="19" viewBox="0 0 117 19" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_111_5398)">
+                            <path
+                                d="M9.57088 0.612343C9.91462 -0.204115 11.0854 -0.204114 11.4291 0.612346L13.4579 5.43123C13.6029 5.77543 13.9306 6.01061 14.3067 6.0404L19.5727 6.45748C20.4649 6.52814 20.8267 7.62813 20.1469 8.2034L16.1348 11.5987C15.8482 11.8412 15.723 12.2218 15.8106 12.5843L17.0363 17.661C17.244 18.5211 16.2969 19.201 15.533 18.7401L11.0245 16.0196C10.7025 15.8252 10.2975 15.8252 9.97548 16.0196L5.46699 18.7401C4.70311 19.201 3.75596 18.5211 3.96363 17.661L5.18942 12.5843C5.27698 12.2218 5.15182 11.8412 4.86526 11.5987L0.853062 8.2034C0.173282 7.62813 0.535068 6.52814 1.42729 6.45748L6.69336 6.0404C7.0695 6.01061 7.39716 5.77543 7.54207 5.43123L9.57088 0.612343Z"
+                                fill="#FFBA08" />
+                            <path
+                                d="M33.5709 0.612343C33.9146 -0.204115 35.0854 -0.204114 35.4291 0.612346L37.4579 5.43123C37.6029 5.77543 37.9306 6.01061 38.3067 6.0404L43.5727 6.45748C44.4649 6.52814 44.8267 7.62813 44.1469 8.2034L40.1348 11.5987C39.8482 11.8412 39.723 12.2218 39.8106 12.5843L41.0363 17.661C41.244 18.5211 40.2969 19.201 39.533 18.7401L35.0245 16.0196C34.7025 15.8252 34.2975 15.8252 33.9755 16.0196L29.467 18.7401C28.7031 19.201 27.756 18.5211 27.9636 17.661L29.1894 12.5843C29.277 12.2218 29.1518 11.8412 28.8653 11.5987L24.8531 8.2034C24.1733 7.62813 24.5351 6.52814 25.4273 6.45748L30.6934 6.0404C31.0695 6.01061 31.3972 5.77543 31.5421 5.43123L33.5709 0.612343Z"
+                                fill="#FFBA08" />
+                            <path
+                                d="M57.5709 0.612343C57.9146 -0.204115 59.0854 -0.204114 59.4291 0.612346L61.4579 5.43123C61.6029 5.77543 61.9306 6.01061 62.3067 6.0404L67.5727 6.45748C68.4649 6.52814 68.8267 7.62813 68.1469 8.2034L64.1348 11.5987C63.8482 11.8412 63.723 12.2218 63.8106 12.5843L65.0363 17.661C65.244 18.5211 64.2969 19.201 63.533 18.7401L59.0245 16.0196C58.7025 15.8252 58.2975 15.8252 57.9755 16.0196L53.467 18.7401C52.7031 19.201 51.756 18.5211 51.9636 17.661L53.1894 12.5843C53.277 12.2218 53.1518 11.8412 52.8653 11.5987L48.8531 8.2034C48.1733 7.62813 48.5351 6.52814 49.4273 6.45748L54.6934 6.0404C55.0695 6.01061 55.3972 5.77543 55.5421 5.43123L57.5709 0.612343Z"
+                                fill="#FFBA08" />
+                            <path
+                                d="M81.5706 0.612343C81.9144 -0.204115 83.0851 -0.204114 83.4289 0.612346L85.4576 5.43123C85.6026 5.77543 85.9303 6.01061 86.3064 6.0404L91.5724 6.45748C92.4646 6.52814 92.8264 7.62813 92.1466 8.2034L88.1345 11.5987C87.848 11.8412 87.7228 12.2218 87.8103 12.5843L89.0361 17.661C89.2438 18.5211 88.2966 19.201 87.5328 18.7401L83.0243 16.0196C82.7023 15.8252 82.2973 15.8252 81.9752 16.0196L77.4667 18.7401C76.7029 19.201 75.7557 18.5211 75.9634 17.661L77.1892 12.5843C77.2767 12.2218 77.1516 11.8412 76.865 11.5987L72.8528 8.2034C72.173 7.62813 72.5348 6.52814 73.427 6.45748L78.6931 6.0404C79.0693 6.01061 79.3969 5.77543 79.5418 5.43123L81.5706 0.612343Z"
+                                fill="#FFBA08" />
+                            <path
+                                d="M105.571 0.612343C105.914 -0.204115 107.085 -0.204114 107.429 0.612346L109.458 5.43123C109.603 5.77543 109.93 6.01061 110.306 6.0404L115.572 6.45748C116.465 6.52814 116.826 7.62813 116.147 8.2034L112.135 11.5987C111.848 11.8412 111.723 12.2218 111.81 12.5843L113.036 17.661C113.244 18.5211 112.297 19.201 111.533 18.7401L107.024 16.0196C106.702 15.8252 106.297 15.8252 105.975 16.0196L101.467 18.7401C100.703 19.201 99.7557 18.5211 99.9634 17.661L101.189 12.5843C101.277 12.2218 101.152 11.8412 100.865 11.5987L96.8528 8.2034C96.173 7.62813 96.5348 6.52814 97.427 6.45748L102.693 6.0404C103.069 6.01061 103.397 5.77543 103.542 5.43123L105.571 0.612343Z"
+                                fill="#FFBA08" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_111_5398">
+                                <rect width="116" height="18.8889" fill="white" transform="translate(0.5)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <p class="text-color-grey mt-8">
+                        "Using FlowBite has been fantastic for my workflow. It made it really easy to create a very good
+                        looking
+                        project in no time.Every designer should have this in their toolbox!"
+                    </p>
+                    <img src="./images/logo2.jpg" alt="" class="mx-auto mt-8">
+                    <p class="font-semibold mt-3">
+                        Roberta Casas
+                    </p>
+                    <p class="text-color-blue">
+                        Web developer @themesberg
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-20 p-2">
+        <div class="bg-color-grayyy space-y-4 text-center py-12 lg:py-24 p-4">
+            <h2 class="font-semibold  text-4xl text-white">
+                Get instant study help
+            </h2>
+            <p class="text-xl text-gray-300">
+                Improve your grades with study resources contributed by<br> classmates studying the same courses
+            </p>
+            <button class="bg-color-blue hover:bg-blue-300 text-white rounded-lg px-6 py-3">
+                Join Now
+            </button>
+        </div>
+    </div>
+    <footer>
+        <div class="lg:flex justify-between px-16">
+            <ul class="lg:flex gap-7 text-color-grayyy">
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <div>
+                <a href="#" class="text-color-grayyy">© Copyright 2023, All Rights Reserved</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
