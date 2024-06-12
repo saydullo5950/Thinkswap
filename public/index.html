@@ -14,9 +14,9 @@
 </head>
 
 <body class="font-roboto">
-    <!-- saydullo -->
-    <header class="max-w-7xl mx-auto">
-        <nav class="flex justify-between items-center py-5 px-4">
+    <!-- saydullo ishi -->
+    <header class="fixed z-10 top-0 w-full bg-white border-b border-gray-300">
+        <nav class="max-w-7xl mx-auto flex justify-between items-center py-5 px-4">
             <div class="flex items-center gap-8">
                 <img src="./images/header-icon.svg" alt="header-icon">
                 <label for="default-search"
@@ -56,20 +56,20 @@
                     Sign in
                 </a>
             </div>
-            <div class="sm:hidden flex items-center gap-5">
+            <div class="sm:hidden flex items-center justify-start gap-5">
                 <img src="./images/search-icon.svg" alt="search" class="cursor-pointer">
                 <img src="./images/menu.svg" alt="menu" class="cursor-pointer">
             </div>
         </nav>
     </header>
-    <div class="max-w-7xl mx-auto pt-16 pb-14 px-4">
-        <div class="grid grid-cols-2 items-center">
-            <div class="">
+    <div class="max-w-7xl mx-auto pt-16 pb-14 px-4 mt-16">
+        <div class="grid md:grid-cols-2 space-y-5 sm:space-y-0 items-center">
+            <div class="text-center sm:text-left">
                 <div
                     class="inline-block bg-brend-blue-200 text-brend-blue-100 font-semibold text-sm uppercase rounded-full tracking-widest py-3 px-4">
                     Get instant study help
                 </div>
-                <h1 class="text-brend-black-100 text-6xl font-bold mt-4">
+                <h1 class="text-brend-black-100 text-4xl sm:text-6xl font-bold mt-4">
                     Welcome to the best <span class="text-brend-blue-100">study library</span> in Australia
                 </h1>
                 <p class="text-brend-gray-400 text-xl mt-4">
@@ -86,7 +86,7 @@
                     </button>
                 </div>
             </div>
-            <div class="">
+            <div>
                 <img src="./images/navbar-image.png" alt="navbar-image">
             </div>
         </div>
@@ -97,7 +97,7 @@
             <h3 class="font-semibold text-5xl mt-5">
                 Browse study resources
             </h3>
-            <div class="mx-auto w-1/2 mt-8">
+            <div class="mx-auto sm:w-1/2 mt-8">
                 <label for="default-search"
                     class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                 <div class="relative">
@@ -124,7 +124,7 @@
                 </div>
                 <div class="grid grid-cols-2 gap-7 mt-6">
                     <div>
-                        <p class="text-left">Choose Region</p>
+                        <p class="text-xs sm:text-base text-left">Choose Region</p>
                         <select class="border border-gray-300 rounded-lg w-full py-3 px-4">
                             <option>
                                 All
@@ -141,7 +141,7 @@
                         </select>
                     </div>
                     <div>
-                        <p class="text-left">Choose Study Type</p>
+                        <p class="text-xs sm:text-base text-left">Choose Study Type</p>
                         <select class="border border-gray-300 rounded-lg w-full py-3 px-4">
                             <option>
                                 All
@@ -160,142 +160,134 @@
                 </div>
             </div>
         </div>
-        <div class="mt-12 space-y-2">
-            <div class="grid grid-cols-4 gap-2">
-                <div class="bg-brend-blue-300 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-green-100">
-                        High School
-                    </p>
-                </div>
-                <div class="bg-brend-pink-100 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-pink-300">
-                        High School
-                    </p>
-                </div>
-                <div class="bg-brend-pink-200 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-yellow-100">
-                        High School
-                    </p>
-                </div>
-                <div class="bg-brend-blue-400 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-blue-500">
-                        High School
-                    </p>
-                </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 space-y-2 mt-12">
+            <div class="bg-brend-blue-300 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-green-100">
+                    High School
+                </p>
             </div>
-            <div class="grid grid-cols-4 gap-2">
-                <div class="bg-brend-blue-300 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-green-100">
-                        High School
-                    </p>
-                </div>
-                <div class="bg-brend-pink-100 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-pink-300">
-                        High School
-                    </p>
-                </div>
-                <div class="bg-brend-pink-200 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-yellow-100">
-                        High School
-                    </p>
-                </div>
-                <div class="bg-brend-blue-400 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-blue-500">
-                        High School
-                    </p>
-                </div>
+            <div class="bg-brend-pink-100 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-pink-300">
+                    High School
+                </p>
             </div>
-            <div class="grid grid-cols-4 gap-2">
-                <div class="bg-brend-blue-300 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-green-100">
-                        High School
-                    </p>
-                </div>
-                <div class="bg-brend-pink-100 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-pink-300">
-                        High School
-                    </p>
-                </div>
-                <div class="bg-brend-pink-200 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-yellow-100">
-                        High School
-                    </p>
-                </div>
-                <div class="bg-brend-blue-400 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-blue-500">
-                        High School
-                    </p>
-                </div>
+            <div class="bg-brend-pink-200 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-yellow-100">
+                    High School
+                </p>
             </div>
-            <div class="grid grid-cols-4 gap-2">
-                <div class="bg-brend-blue-300 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-green-100">
-                        High School
-                    </p>
-                </div>
-                <div class="bg-brend-pink-100 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-pink-300">
-                        High School
-                    </p>
-                </div>
-                <div class="bg-brend-pink-200 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-yellow-100">
-                        High School
-                    </p>
-                </div>
-                <div class="bg-brend-blue-400 rounded-lg py-7 px-4">
-                    <h4 class="font-medium text-xl">
-                        Charles Sturt University
-                    </h4>
-                    <p class="text-brend-blue-500">
-                        High School
-                    </p>
-                </div>
+            <div class="bg-brend-blue-400 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-blue-500">
+                    High School
+                </p>
+            </div>
+            <div class="hidden sm:block bg-brend-blue-300 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-green-100">
+                    High School
+                </p>
+            </div>
+            <div class="hidden sm:block bg-brend-pink-100 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-pink-300">
+                    High School
+                </p>
+            </div>
+            <div class="hidden sm:block bg-brend-pink-200 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-yellow-100">
+                    High School
+                </p>
+            </div>
+            <div class="hidden sm:block bg-brend-blue-400 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-blue-500">
+                    High School
+                </p>
+            </div>
+            <div class="hidden sm:block bg-brend-blue-300 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-green-100">
+                    High School
+                </p>
+            </div>
+            <div class="hidden sm:block bg-brend-pink-100 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-pink-300">
+                    High School
+                </p>
+            </div>
+            <div class="hidden sm:block bg-brend-pink-200 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-yellow-100">
+                    High School
+                </p>
+            </div>
+            <div class="hidden sm:block bg-brend-blue-400 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-blue-500">
+                    High School
+                </p>
+            </div>
+            <div class="hidden sm:block bg-brend-blue-300 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-green-100">
+                    High School
+                </p>
+            </div>
+            <div class="hidden sm:block bg-brend-pink-100 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-pink-300">
+                    High School
+                </p>
+            </div>
+            <div class="hidden sm:block bg-brend-pink-200 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-yellow-100">
+                    High School
+                </p>
+            </div>
+            <div class="hidden sm:block bg-brend-blue-400 rounded-lg py-7 px-4">
+                <h4 class="font-medium text-xl">
+                    Charles Sturt University
+                </h4>
+                <p class="text-brend-blue-500">
+                    High School
+                </p>
             </div>
         </div>
         <div class="flex justify-center mt-8">
@@ -304,18 +296,18 @@
             </button>
         </div>
     </div>
-    <div class="max-w-7xl mx-auto py-20">
+    <div class="max-w-7xl mx-auto py-20 px-4">
         <div class="text-center space-y-5">
             <p class="text-brend-blue-100 font-semibold uppercase">contributed by classmates</p>
-            <h3 class="font-semibold text-5xl">
+            <h3 class="font-semibold text-4xl md:text-5xl">
                 Contribute and use Thinkswap for <span class="text-brend-blue-100">free</span>
             </h3>
         </div>
-        <div class="grid grid-cols-2">
-            <div class="space-y-11">
+        <div class="grid md:grid-cols-2 gap-4 mt-7">
+            <div class="text-center md:text-left space-y-11">
                 <img src="./images/hero-image.png" alt="hero-image">
                 <div class="space-y-4">
-                    <h3 class="text-brend-black-100 font-semibold text-3xl">
+                    <h3 class="text-brend-black-100 font-semibold text-2xl sm:text-3xl">
                         Have something to share? You can use Thinkswap for free!
                     </h3>
                     <p class="text-brend-gray-400">
@@ -323,23 +315,25 @@
                         access
                         new study resources for free. Learn more about uploads and pricing.
                     </p>
-                    <button class="border border-brend-black-100 rounded-lg font-semibold py-4 px-6 mt-1">
+                    <button
+                        class="border border-brend-black-100 rounded-lg font-semibold text-nowrap w-full sm:w-32 py-4 px-6 mt-1">
                         Learn More
                     </button>
                 </div>
             </div>
-            <div class="space-y-11">
+            <div class="text-center md:text-left space-y-11">
                 <img src="./images/hero-image.png" alt="hero-image">
                 <div class="space-y-4">
-                    <h3 class="text-brend-black-100 font-semibold text-3xl">
-                        Earn money by selling your best study <br> notes
+                    <h3 class="text-brend-black-100 font-semibold text-2xl sm:text-3xl">
+                        Have something to share? You can use Thinkswap for free!
                     </h3>
                     <p class="text-brend-gray-400">
-                        If you have exceptional study notes, you can join Thinkswap Elite and earn money each time your
-                        notes sell. We have a strong student community, with millions of students browsing Thinkswap’s
-                        study library.
+                        Thinkswap works best when students share. Students who upload their own study resources can
+                        access
+                        new study resources for free. Learn more about uploads and pricing.
                     </p>
-                    <button class="border border-brend-black-100 rounded-lg font-semibold py-4 px-6 mt-1">
+                    <button
+                        class="border border-brend-black-100 rounded-lg font-semibold text-nowrap w-full sm:w-32 py-4 px-6 mt-1">
                         Learn More
                     </button>
                 </div>
@@ -347,8 +341,8 @@
         </div>
     </div>
     <div class="bg-brend-blue-100">
-        <div class="max-w-7xl mx-auto py-36">
-            <div class="grid grid-cols-2 gap-14">
+        <div class="max-w-7xl mx-auto py-14 sm:py-36 px-4">
+            <div class="grid lg:grid-cols-2 gap-14">
                 <div>
                     <div class="bg-brend-black-200 rounded-md py-10 px-7">
                         <div class="space-y-5">
@@ -369,30 +363,32 @@
                                     9 pages of analyzed quotes from Shakespeare's Othello. Made for the end-of-year
                                     preliminary exam.
                                 </p>
-                                <div class="flex justify-between mt-5">
+                                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 mt-5">
                                     <div class="flex items-center gap-1">
                                         <img src="./images/like-icon.svg" alt="like-icon">
-                                        <p class="text-brend-black-100 text-sm font-semibold">
+                                        <p class="text-nowrap text-brend-black-100 text-sm font-semibold">
+                                            9 Pages
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img src="./images/like-icon.svg" alt="like-icon">
+                                        <p class="text-nowrap text-brend-black-100 text-sm font-semibold">
                                             5 Found Useful
                                         </p>
                                     </div>
                                     <div class="flex items-center gap-1">
                                         <img src="./images/like-icon.svg" alt="like-icon">
-                                        <p class="text-brend-black-100 text-sm font-semibold">
+                                        <p class="text-nowrap text-brend-black-100 text-sm font-semibold">
                                             5 Found Useful
                                         </p>
                                     </div>
-                                    <div class="flex items-center gap-1">
-                                        <img src="./images/like-icon.svg" alt="like-icon">
-                                        <p class="text-brend-black-100 text-sm font-semibold">
-                                            5 Found Useful
-                                        </p>
-                                    </div>
-                                    <div class="flex items-center gap-1">
-                                        <img src="./images/like-icon.svg" alt="like-icon">
-                                        <p class="text-brend-black-100 text-sm font-semibold">
-                                            5 Found Useful
-                                        </p>
+                                    <div class="hidden md:block">
+                                        <div class="flex items-center gap-1">
+                                            <img src="./images/like-icon.svg" alt="like-icon">
+                                            <p class="text-nowrap text-brend-black-100 text-sm font-semibold">
+                                                5 Found Useful
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                                 <button
@@ -404,7 +400,7 @@
                     </div>
                 </div>
                 <div class="">
-                    <h3 class="text-white text-5xl font-semibold">
+                    <h3 class="text-white text-3xl sm:text-5xl font-semibold">
                         Take a look at some of our amazing documents
                     </h3>
                     <div class="space-y-8 mt-9">
@@ -446,7 +442,7 @@
             </div>
         </div>
     </div>
-    <!-- odiljon -->
+    <!-- odiljon ishi -->
     <div class="max-w-7xl mx-auto mt-12">
         <div class="flex justify-center">
             <div class="border border-gray-200 text-center inline-block rounded-full px-2 py-3">

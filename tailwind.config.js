@@ -16,6 +16,7 @@ module.exports = {
         "color-grays": "#E6F6FF",
         "color-grayy": "#FEF8ED",
         "color-grayyy": "#07123F",
+        "color-100": "#F8F8FF",
         brend: {
           gray: {
             100: '#1B234478',
