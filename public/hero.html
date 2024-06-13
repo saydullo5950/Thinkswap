@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+
+<body class="font-roboto">
+    <!-- saydullo ishi -->
+    <header class="fixed z-10 top-0 w-full bg-white border-b border-gray-300">
+        <nav class="max-w-7xl mx-auto flex justify-between items-center py-5 px-4">
+            <div class="flex items-center gap-8">
+                <img src="./images/header-icon.svg" alt="header-icon">
+                <label for="default-search"
+                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="hidden sm:block relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="search" id="default-search"
+                        class="block w-96 p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search Thinkswap" required />
+                </div>
+            </div>
+            <div class="flex items-center gap-6">
+                <div class="hidden lg:block">
+                    <div class="flex gap-1 items-center text-brend-gray-200 text-medium text-lg">
+                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.0002 0.86499V2.86499H17.0002L11.0002 11.865V18.865H7.00018V11.865L1.00018 2.86499H0.000183105V0.86499H18.0002Z"
+                                fill="#5B5F79" fill-opacity="0.36" />
+                        </svg>
+                        Browse subjects
+                    </div>
+                </div>
+                <div class="hidden lg:block border-x border-brend-gray-300 px-6">
+                    <img src="./images/korzinka-icon.png" alt="korzinka-icon" class="cursor-pointer">
+                </div>
+                <button
+                    class="hidden md:block bg-brend-blue-100 text-white hover:opacity-50 transition-all duration-300 font-medium text-sm rounded-md py-2 px-5">
+                    Register
+                </button>
+                <a href="#" class="hidden md:block text-brend-blue-100 font-medium">
+                    Sign in
+                </a>
+            </div>
+            <div class="sm:hidden flex items-center justify-start gap-5">
+                <img src="./images/search-icon.svg" alt="search" class="cursor-pointer">
+                <img src="./images/menu.svg" alt="menu" class="cursor-pointer">
+            </div>
+        </nav>
+    </header>
+    <div class="max-w-7xl mx-auto pt-14 pb-12 px-4 mt-28">
+        <div class="max-w-2xl mx-auto text-center">
+            <div
+                class="inline-block bg-brend-blue-200 text-brend-blue-100 font-semibold text-sm uppercase rounded-full tracking-widest py-3 px-4">
+                Get instant study help
+            </div>
+            <h3 class="text-5xl sm:text-6xl font-bold mt-3">
+                English <span class="text-brend-blue-100">(Advanced)</span>
+            </h3>
+            <p class="text-brend-gray-400 text-xl mt-3">
+                Browse through an extensive library of study notes and past essays contributed by other students
+            </p>
+            <div class="flex items-center justify-center gap-6 mt-3">
+                <div class="flex items-center text-sm font-semibold gap-2">
+                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.3877 18.851H1.31434C0.794044 18.851 0.372253 18.4292 0.372253 17.9089V0.951362C0.372253 0.431068 0.794044 0.00927734 1.31434 0.00927734H16.3877C16.908 0.00927734 17.3298 0.431068 17.3298 0.951362V17.9089C17.3298 18.4292 16.908 18.851 16.3877 18.851ZM15.4456 16.9668V1.89345H2.25642V16.9668H15.4456ZM5.08268 4.7197H12.6194V6.60387H5.08268V4.7197ZM5.08268 8.48804H12.6194V10.3722H5.08268V8.48804ZM5.08268 12.2564H12.6194V14.1406H5.08268V12.2564Z"
+                            fill="url(#paint0_linear_1_4179)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_1_4179" x1="-1.06261" y1="9.43013" x2="19.5473"
+                                y2="9.43013" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#457EF8" />
+                                <stop offset="1" stop-color="#5E69DF" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    44 Documents
+                </div>
+                <div class="flex items-center text-sm font-semibold gap-2">
+                    <img src="./images/logo-image.svg" alt="logo-image">
+                    Trending
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-brend-pink-200 py-9 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="md:flex justify-between items-center space-y-2 md:space-y-0">
+                <div class="text-center md:text-left">
+                    <h3 class="font-semibold text-3xl">
+                        Claim a bounty
+                    </h3>
+                    <p class="text-brend-gray-400">
+                        Has this subject changed name or been replaced? Tell us and earn free Exchange Credits
+                    </p>
+                </div>
+                <div class="flex justify-center md:justify-end">
+                    <button
+                        class="bg-brend-yellow-100 hover:opacity-50 transition-all duration-300 text-sm font-medium rounded-lg py-3 px-8">
+                        Claim Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-brend-blue-100">
+        <div class="max-w-7xl mx-auto py-9 px-4">
+            <div class="sm:flex items-center gap-16 space-y-5 sm:space-y-5 text-center sm:text-left">
+                <h3 class="sm:w-2/5 text-white font-semibold text-5xl">
+                    HSC - Higher School Certificate
+                </h3>
+                <div class="space-y-8 sm:w-3/5">
+                    <p class="text-white">
+                        Exams don't have to be as stressful as everyone says they are. Sure, it's boring when you're
+                        revising the same notes that you've already seen hundreds of times, but that is where
+                        Thinkswap's
+                        HSC study notes can
+                        help you
+                    </p>
+                    <p class="text-white">
+                        We've collected a huge amount of HSC notes from former year 11 and year 12 students, and you can
+                        use
+                        those suppliment the content you are already studying but with another point of view. This
+                        tricks
+                        the brain into thinking you're seeing all new stuff, even though it's the same topies presented
+                        in a
+                        different way.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- odiljon ishi -->
+    <div class="lg:flex justify-between gap-6 px-4">
+        <div class="grid gap-y-5 px-4 mt-12">
+            <div>
+                <div class="flex justify-between">
+                    <h1 class="font-semibold">
+                        Filters
+                    </h1>
+                    <p class="font-medium text-color-blue">
+                        Clear all
+                    </p>
+                </div>
+                <div>
+                    <ul class="grid gap-y-2 mt-6">
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Category One</a></li>
+                        <li><a href="#">Category Two</a></li>
+                        <li><a href="#">Category Three</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between">
+                    <h1 class="font-semibold">
+                        Filters
+                    </h1>
+                    <p class="font-medium text-color-blue">
+                        Clear
+                    </p>
+                </div>
+                <div class="grid gap-y-3 mt-5">
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" id="cb1" class="size-5">
+                        <label for="cb1">Option One</label>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" id="cb1" class="size-5">
+                        <label for="cb1">Option One</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between">
+                    <h1 class="font-semibold">
+                        Filters
+                    </h1>
+                    <p class="font-medium text-color-blue">
+                        Clear
+                    </p>
+                </div>
+                <div class="grid gap-y-3 mt-5">
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" id="cb1" class="size-5 rounded-lg">
+                        <label for="cb1">Option One</label>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" id="cb1" class="size-5">
+                        <label for="cb1">Option One</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between">
+                    <h1 class="font-semibold">
+                        Filters
+                    </h1>
+                    <p class="font-medium text-color-blue">
+                        Clear
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-5">
+                    <button class="bg-color-blue text-white hover:bg-blue-300 rounded-lg px-5 py-2">
+                        Option One
+                    </button>
+                    <button
+                        class="border-2 border-color-blue hover:bg-blue-300 hover:text-white text-nowrap rounded-lg px-5 py-2">
+                        Option One
+                    </button>
+                    <button
+                        class="border-2 border-color-blue hover:bg-blue-300 hover:text-white text-nowrap rounded-lg px-5 py-2">
+                        Option One
+                    </button>
+                    <button
+                        class="border-2 border-color-blue hover:bg-blue-300 hover:text-white text-nowrap rounded-lg px-5 py-2">
+                        Option One
+                    </button>
+                    <button
+                        class="border-2 border-color-blue hover:bg-blue-300 hover:text-white text-nowrap rounded-lg px-5 py-2">
+                        Option One
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:block">
+            <div class="flex justify-between items-center mt-12">
+                <div class="w-96">
+                    <form action="" class="flex items-center border border-gray-200 lg:rounded-lg py-3 px-5">
+                        <svg class="ml-5" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.1875 21.9375L15.5625 15.3125M17.7708 9.79167C17.7708 10.8067 17.5709 11.8117 17.1825 12.7495C16.7941 13.6872 16.2247 14.5393 15.507 15.257C14.7893 15.9747 13.9372 16.5441 12.9995 16.9325C12.0617 17.3209 11.0567 17.5208 10.0417 17.5208C9.02666 17.5208 8.02159 17.3209 7.08384 16.9325C6.1461 16.5441 5.29404 15.9747 4.57632 15.257C3.8586 14.5393 3.28927 13.6872 2.90085 12.7495C2.51242 11.8117 2.3125 10.8067 2.3125 9.79167C2.3125 7.74176 3.12682 5.77582 4.57632 4.32632C6.02582 2.87682 7.99176 2.0625 10.0417 2.0625C12.0916 2.0625 14.0575 2.87682 15.507 4.32632C16.9565 5.77582 17.7708 7.74176 17.7708 9.79167Z"
+                                Одилбек J, [13.06.2024 8:51] stroke="url(#paint0_linear_3494_84)" stroke-width="2.94444"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear_3494_84" x1="0.630769" y1="12" x2="24.7865" y2="12"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#457EF8" />
+                                    <stop offset="1" stop-color="#5E69DF" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <input type="text" placeholder="Search English Advanced"
+                            class="flex-1 rounded-bl-md rounded-tl md border-none  text-gray-900 outline-none p-2 ml-2">
+                    </form>
+                </div>
+                <div class="flex gap-2">
+                    <button class="flex gap-2 border border-gray-200 items-center text-color-200 py-3 px-5">
+                        Document Type
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7.39782 7.20296C7.17814 7.42263 6.82204 7.42263 6.60237 7.20296L0.867509 1.46808C0.647842 1.24841 0.647842 0.892307 0.867509 0.672632L1.13268 0.407432C1.35235 0.187757 1.7085 0.187757 1.92817 0.407432L7.00009 5.47938L12.072 0.407432C12.2917 0.187757 12.6478 0.187757 12.8675 0.407432L13.1327 0.672632C13.3524 0.892307 13.3524 1.24841 13.1327 1.46808L7.39782 7.20296Z"
+                                fill="#959CB8" />
+                        </svg>
+
+                    </button>
+                    <button class="flex gap-2 border border-gray-200 items-center text-color-200 py-3 px-5">
+                        Level
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7.39782 7.20296C7.17814 7.42263 6.82204 7.42263 6.60237 7.20296L0.867509 1.46808C0.647842 1.24841 0.647842 0.892307 0.867509 0.672632L1.13268 0.407432C1.35235 0.187757 1.7085 0.187757 1.92817 0.407432L7.00009 5.47938L12.072 0.407432C12.2917 0.187757 12.6478 0.187757 12.8675 0.407432L13.1327 0.672632C13.3524 0.892307 13.3524 1.24841 13.1327 1.46808L7.39782 7.20296Z"
+                                fill="#959CB8" />
+                        </svg>
+                    </button>
+                    <button class="flex gap-2 border border-gray-200 items-center text-color-200 py-3 px-5">
+                        Sort By
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7.39782 7.20296C7.17814 7.42263 6.82204 7.42263 6.60237 7.20296L0.867509 1.46808C0.647842 1.24841 0.647842 0.892307 0.867509 0.672632L1.13268 0.407432C1.35235 0.187757 1.7085 0.187757 1.92817 0.407432L7.00009 5.47938L12.072 0.407432C12.2917 0.187757 12.6478 0.187757 12.8675 0.407432L13.1327 0.672632C13.3524 0.892307 13.3524 1.24841 13.1327 1.46808L7.39782 7.20296Z"
+                                fill="#959CB8" />
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
+            <div>
+                <p class="pt-5">
+                    Showing 0 of 100
+                </p>
+                <div class="grid gap-5">
+                    <div class="flex items-center bg-color-100 px-5 py-4">
+                        <img src="./images/card-image.png" alt="" class="w-48 h-44">
+                        <div class="pl-4">
+                            <h2 class="font-semibold">
+                                Othello notes and quotes analysed
+                            </h2>
+                            <p>
+                                ENGLISH (ADVANCED)
+                            </p>
+                            <p class="font-semibold text-color-blue">
+                                55 Ex
+                            </p>
+                            <p class="text-color-grey">
+                                9 pages of analyzed quotes from Shakespeare's Othello. Made<br> for the end-of-year
+                                preliminary exam.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <button
+                                class="font-semibold bg-color-blue text-white hover:bg-blue-400 text-nowrap rounded-lg px-14 py-3">
+                                Add to cart
+                            </button>
+                            <p class="font-semibold text-color-blue ml-12 mt-4">
+                                View Details
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-color-100 px-5 py-4">
+                        <img src="./images/card-image.png" alt="" class="w-48 h-44">
+                        <div class="pl-4">
+                            <h2 class="font-semibold">
+                                Othello notes and quotes analysed
+                            </h2>
+                            <p>
+                                ENGLISH (ADVANCED)
+                            </p>
+                            <p class="font-semibold text-color-blue">
+                                55 Ex
+                            </p>
+                            <p class="text-color-grey">
+                                9 pages of analyzed quotes from Shakespeare's Othello. Made<br> for the end-of-year
+                                preliminary exam.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <button
+                                class="font-semibold bg-color-blue text-white hover:bg-blue-400 text-nowrap rounded-lg px-14 py-3">
+                                Add to cart
+                            </button>
+                            <p class="font-semibold text-color-blue ml-12 mt-4">
+                                View Details
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-color-100 px-5 py-4">
+                        <img src="./images/card-image.png" alt="" class="w-48 h-44">
+                        <div class="pl-4">
+                            <h2 class="font-semibold">
+                                Othello notes and quotes analysed
+                            </h2>
+                            <p>
+                                ENGLISH (ADVANCED)
+                            </p>
+                            <p class="font-semibold text-color-blue">
+                                55 Ex
+                            </p>
+                            <p class="text-color-grey">
+                                9 pages of analyzed quotes from Shakespeare's Othello. Made<br> for the end-of-year
+                                preliminary exam.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <button
+                                class="font-semibold bg-color-blue text-white hover:bg-blue-400 text-nowrap rounded-lg px-14 py-3">
+                                Add to cart
+                            </button>
+                            <p class="font-semibold text-color-blue ml-12 mt-4">
+                                View Details
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-color-100 px-5 py-4">
+                        <img src="./images/card-image.png" alt="" class="w-48 h-44">
+                        <div class="pl-4">
+                            <h2 class="font-semibold">
+                                Othello notes and quotes analysed
+                            </h2>
+                            <p>
+                                ENGLISH (ADVANCED)
+                            </p>
+                            <p class="font-semibold text-color-blue">
+                                55 Ex
+                            </p>
+                            <p class="text-color-grey">
+                                9 pages of analyzed quotes from Shakespeare's Othello. Made<br> for the end-of-year
+                                preliminary exam.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img src="./images/like-icon.svg" alt="like-icon">
+                                    <p class="text-brend-black-100 text-sm text-nowrap font-semibold">
+                                        5 Found Useful
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <button
+                                class="font-semibold bg-color-blue text-white hover:bg-blue-400 text-nowrap rounded-lg px-14 py-3">
+                                Add to cart
+                            </button>
+                            <p class="font-semibold text-color-blue ml-12 mt-4">
+                                View Details
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-20 p-2 lg:p-0">
+        <div class="bg-color-grayyy space-y-4 text-center py-12 lg:py-24 p-4">
+            <h2 class="font-semibold  text-4xl text-white">
+                Get instant study help
+            </h2>
+            <p class="text-xl text-gray-300">
+                Improve your grades with study resources contributed by<br> classmates studying the same courses
+            </p>
+            <button class="bg-color-blue hover:bg-blue-300 text-white rounded-lg px-6 py-3">
+                Join Now
+            </button>
+        </div>
+    </div>
+    <footer class="max-w-7xl mx-auto  lg:px-4 mt-16">
+        <div class="lg:flex justify-between items-center">
+            <div>
+                <img src="./images/header-icon.svg" alt="">
+            </div>
+            <ul class="flex gap-8">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Affiliate Program</a></li>
+            </ul>
+            <div class="flex p-2 lg:w-96 items-center justify-center">
+                <div class="w-full">
+                    <form action="" class="flex items-center border border-gray-200 mt-3 lg:rounded-lg">
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.25 3.8443L7.1675 7.7893C7.414 7.95376 7.70368 8.04152 8 8.04152C8.29632 8.04152 8.586 7.95376 8.8325 7.7893L14.75 3.8443M2.75 12.0943H13.25C13.6478 12.0943 14.0294 11.9363 14.3107 11.655C14.592 11.3737 14.75 10.9921 14.75 10.5943V3.0943C14.75 2.69647 14.592 2.31494 14.3107 2.03364C14.0294 1.75233 13.6478 1.5943 13.25 1.5943H2.75C2.35218 1.5943 1.97064 1.75233 1.68934 2.03364C1.40804 2.31494 1.25 2.69647 1.25 3.0943V10.5943C1.25 10.9921 1.40804 11.3737 1.68934 11.655C1.97064 11.9363 2.35218 12.0943 2.75 12.0943Z"
+                                stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <input type="text" placeholder="Enter your email"
+                            class="flex-1 rounded-bl-md rounded-tl md border-none p-2 text-gray-900 outline-none">
+                        <button class="rounded-br-md rounded-tr-md bg-color-blue p-2 text-sm text-neutral-50">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between border-t border-gray-200  mt-8">
+            <p class="mt-8">
+                © 2023 Thinkswap, Inc. All rights reserved.
+            </p>
+            <div class="flex flex-wrap gap-5 mt-8">
+                <a href="#">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path Одилбек J, [12.06.2024 15:30]
+                            d="M5.80078 14.3995C5.80078 14.3292 5.73047 14.2589 5.625 14.2589C5.51953 14.2589 5.44922 14.3292 5.44922 14.3995C5.44922 14.4698 5.51953 14.5402 5.625 14.505C5.73047 14.505 5.80078 14.4698 5.80078 14.3995ZM4.71094 14.2238C4.71094 14.2941 4.78125 14.3995 4.88672 14.3995C4.95703 14.4347 5.0625 14.3995 5.09766 14.3292C5.09766 14.2589 5.0625 14.1886 4.95703 14.1534C4.85156 14.1183 4.74609 14.1534 4.71094 14.2238ZM6.29297 14.1886C6.1875 14.1886 6.11719 14.2589 6.11719 14.3644C6.11719 14.4347 6.22266 14.4698 6.32812 14.4347C6.43359 14.3995 6.50391 14.3644 6.46875 14.2941C6.46875 14.2238 6.36328 14.1534 6.29297 14.1886ZM8.57812 0.688599C3.72656 0.688599 0 4.41516 0 9.26672C0 13.1691 2.42578 16.5089 5.94141 17.7042C6.39844 17.7745 6.53906 17.4933 6.53906 17.2823C6.53906 17.0363 6.53906 15.8409 6.53906 15.1027C6.53906 15.1027 4.07812 15.63 3.55078 14.048C3.55078 14.048 3.16406 13.0284 2.60156 12.7823C2.60156 12.7823 1.79297 12.2198 2.63672 12.2198C2.63672 12.2198 3.51562 12.2902 4.00781 13.1339C4.78125 14.505 6.04688 14.1183 6.57422 13.8722C6.64453 13.3097 6.85547 12.923 7.13672 12.6769C5.16797 12.4659 3.16406 12.1847 3.16406 8.80969C3.16406 7.82532 3.44531 7.36829 4.00781 6.73547C3.90234 6.48938 3.62109 5.57532 4.11328 4.34485C4.81641 4.13391 6.53906 5.29407 6.53906 5.29407C7.24219 5.08313 7.98047 5.01282 8.71875 5.01282C9.49219 5.01282 10.2305 5.08313 10.9336 5.29407C10.9336 5.29407 12.6211 4.09875 13.3594 4.34485C13.8516 5.57532 13.5352 6.48938 13.4648 6.73547C14.0273 7.36829 14.3789 7.82532 14.3789 8.80969C14.3789 12.1847 12.3047 12.4659 10.3359 12.6769C10.6523 12.9581 10.9336 13.4855 10.9336 14.3292C10.9336 15.4894 10.8984 16.9659 10.8984 17.2472C10.8984 17.4933 11.0742 17.7745 11.5312 17.6691C15.0469 16.5089 17.4375 13.1691 17.4375 9.26672C17.4375 4.41516 13.4648 0.688599 8.57812 0.688599ZM3.41016 12.8175C3.33984 12.8527 3.375 12.9581 3.41016 13.0284C3.48047 13.0636 3.55078 13.0988 3.62109 13.0636C3.65625 13.0284 3.65625 12.923 3.58594 12.8527C3.51562 12.8175 3.44531 12.7823 3.41016 12.8175ZM3.02344 12.5363C2.98828 12.6066 3.02344 12.6417 3.09375 12.6769C3.16406 12.712 3.23438 12.712 3.26953 12.6417C3.26953 12.6066 3.23438 12.5714 3.16406 12.5363C3.09375 12.5011 3.05859 12.5011 3.02344 12.5363ZM4.14844 13.8019C4.11328 13.837 4.11328 13.9425 4.21875 14.0128C4.28906 14.0831 4.39453 14.1183 4.42969 14.048C4.46484 14.0128 4.46484 13.9073 4.39453 13.837C4.32422 13.7667 4.21875 13.7316 4.14844 13.8019ZM3.76172 13.2745C3.69141 13.3097 3.69141 13.4152 3.76172 13.4855C3.83203 13.5558 3.90234 13.5909 3.97266 13.5558C4.00781 13.5206 4.00781 13.4152 3.97266 13.3448C3.90234 13.2745 3.83203 13.2394 3.76172 13.2745Z"
+                            fill="#9CA3AF" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.1367 4.30969C16.8398 3.78235 17.4727 3.14954 17.9648 2.41125C17.332 2.6925 16.5938 2.90344 15.8555 2.97375C16.6289 2.51672 17.1914 1.8136 17.4727 0.934692C16.7695 1.35657 15.9609 1.67297 15.1523 1.84875C14.4492 1.11047 13.5 0.688599 12.4453 0.688599C10.4062 0.688599 8.75391 2.34094 8.75391 4.38C8.75391 4.66125 8.78906 4.9425 8.85938 5.22375C5.80078 5.04797 3.05859 3.57141 1.23047 1.35657C0.914062 1.88391 0.738281 2.51672 0.738281 3.21985C0.738281 4.48547 1.37109 5.61047 2.39062 6.27844C1.79297 6.24329 1.19531 6.10266 0.703125 5.82141V5.85657C0.703125 7.64954 1.96875 9.1261 3.65625 9.47766C3.375 9.54797 3.02344 9.61829 2.70703 9.61829C2.46094 9.61829 2.25 9.58313 2.00391 9.54797C2.46094 11.0245 3.83203 12.0792 5.44922 12.1144C4.18359 13.0988 2.60156 13.6964 0.878906 13.6964C0.5625 13.6964 0.28125 13.6613 0 13.6261C1.61719 14.6808 3.55078 15.2784 5.66016 15.2784C12.4453 15.2784 16.1367 9.6886 16.1367 4.80188C16.1367 4.6261 16.1367 4.48547 16.1367 4.30969Z"
+                            fill="#9CA3AF" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.71875 0.688599C3.90234 0.688599 0 4.6261 0 9.40735C0 14.2238 3.90234 18.1261 8.71875 18.1261C13.5 18.1261 17.4375 14.2238 17.4375 9.40735C17.4375 4.6261 13.5 0.688599 8.71875 0.688599ZM14.4492 4.73157C15.5039 5.99719 16.1367 7.61438 16.1367 9.37219C15.8906 9.30188 13.4297 8.80969 10.9688 9.1261C10.7578 8.63391 10.582 8.21204 10.3008 7.64954C13.0781 6.52454 14.3086 4.9425 14.4492 4.73157ZM13.6406 3.85266C13.5 4.0636 12.375 5.57532 9.73828 6.55969C8.50781 4.30969 7.17188 2.48157 6.96094 2.20032C9.31641 1.63782 11.8125 2.23547 13.6406 3.85266ZM5.51953 2.6925C5.73047 2.97375 7.06641 4.80188 8.29688 7.01672C4.81641 7.93079 1.75781 7.93079 1.40625 7.89563C1.89844 5.61047 3.44531 3.67688 5.51953 2.6925ZM1.26562 9.4425C1.26562 9.37219 1.26562 9.30188 1.26562 9.19641C1.58203 9.23157 5.20312 9.26672 8.89453 8.14172C9.14062 8.5636 9.31641 8.98547 9.52734 9.40735C6.82031 10.1808 4.35938 12.3605 3.16406 14.3995C1.96875 13.0988 1.26562 11.3409 1.26562 9.4425ZM4.11328 15.3136C4.92188 13.7316 7.03125 11.6573 10.0195 10.6378C11.0742 13.3448 11.4961 15.63 11.6016 16.298C9.21094 17.3175 6.32812 17.0363 4.11328 15.3136ZM12.8672 15.5948C12.7969 15.173 12.375 12.9933 11.4258 10.2863C13.7461 9.93469 15.7852 10.5323 16.0664 10.6027C15.7148 12.6769 14.5195 14.4698 12.8672 15.5948Z"
+                            fill="#9CA3AF" />
+                    </svg>
+
+                </a>
+                <a href="#">
+                    <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.03516 10.8136L9.52734 7.57922H6.39844V5.46985C6.39844 4.55579 6.82031 3.71204 8.22656 3.71204H9.66797V0.934692C9.66797 0.934692 8.36719 0.688599 7.13672 0.688599C4.57031 0.688599 2.88281 2.27063 2.88281 5.08313V7.57922H0V10.8136H2.88281V18.6886H6.39844V10.8136H9.03516Z"
+                            fill="#9CA3AF" />
+                    </svg>
+
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
